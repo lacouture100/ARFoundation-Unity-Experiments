@@ -5,11 +5,11 @@ Experiments made using Unity and AR Foundation. Deployed in Android.
 
 Create a new project in Unity and select the 3D Template. I am using version `2019.3.3f1`
 
-![setupImages/setupTamplate.JPG](setupImages/setupTemplate.JPG)
+![3D template setup](setupImages/setupTemplate.JPG)
 
-Open the package manager and install `AR Foundation`, `AR Subsystems` and the `ARCore XR` plugin. If you are using an Iphone/Ipad, also install the `ARKit XR` Plugin.
+Open the package manager and install `AR Foundation 3.0.1`, `AR Subsystems 3.0.0` and the `ARCore XR 3.0.1` packages.  If you are using an Iphone/Ipad, also install the `ARKit XR` Plugin.
 
-![setupImages/setupPackages.JPG](setupImages/setupPackages.JPG)
+![`AR Foundation`, `AR Subsystems` and the `ARCore XR` packages view](setupImages/setupPackages.JPG)
 
 `ARFoundation` is built on "subsystems" and depends on a separate package called ARSubsystems. `ARSubsystems` defines an interface, and the platform-specific implementations are in the ARCore and ARKit packages. ARFoundation turns the AR data provided by ARSubsystems into Unity GameObjects and MonoBehavours.([source](https://github.com/Unity-Technologies/arfoundation-samples))
 
@@ -21,14 +21,19 @@ Add an `AR Tracked Image Manager` component to your `AR Session Origin` object i
 
 ![setupImages/setupimageLibrary.JPG](setupImages/setupimageLibrary.JPG)
 
-## Android Player Settings 
 
-- Disable Vulkan
-- Set minimum API level to 24 (Android Nougat version 7.0)
-
-Add a AR Camera Manager Component, and set the focus mode to 'auto'.
+Add a AR Camera Manager Component, and set the focus mode to 'auto'. [AR Camera Manager Documentation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@3.0/api/UnityEngine.XR.ARFoundation.ARCameraManager.html)
 
 ![setupImages/setupCameraFocus.JPG](setupImages/setupCameraFocus.JPG)
+
+## Android Player Settings 
+
+The following settings are found in the `other settings` tab
+
+- Disable Vulkan in the Graphics options
+- Set minimum API level to 24 (Android Nougat version 7.0)
+
+
 
 #### Random
 

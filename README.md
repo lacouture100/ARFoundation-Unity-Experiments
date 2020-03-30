@@ -5,11 +5,11 @@ Experiments made using Unity and AR Foundation. Deployed in Android.
 
 Create a new project in Unity and select the 3D Template. I am using version `2019.3.3f1`
 
-![setupImages/setupTamplate.JPG](setupImages/2ba65e50-d660-451f-9d91-66f88c2e8749/setupTamplate.JPG)
+![setupImages/setupTamplate.JPG](setupImages/setupTemplate.JPG)
 
 Open the package manager and install `AR Foundation`, `AR Subsystems` and the `ARCore XR` plugin. If you are using an Iphone/Ipad, also install the `ARKit XR` Plugin.
 
-![setupImages/setupPackages.JPG](setupImages/fe27790f-9888-48cd-879b-5d1e40fadc42/setupPackages.JPG)
+![setupImages/setupPackages.JPG](setupImages/setupPackages.JPG)
 
 `ARFoundation` is built on "subsystems" and depends on a separate package called ARSubsystems. `ARSubsystems` defines an interface, and the platform-specific implementations are in the ARCore and ARKit packages. ARFoundation turns the AR data provided by ARSubsystems into Unity GameObjects and MonoBehavours.([source](https://github.com/Unity-Technologies/arfoundation-samples))
 

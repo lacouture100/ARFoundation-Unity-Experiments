@@ -13,14 +13,13 @@ Open the package manager and install `AR Foundation 3.0.1`, `AR Subsystems 3.0.0
 
 `ARFoundation` is built on "subsystems" and depends on a separate package called ARSubsystems. `ARSubsystems` defines an interface, and the platform-specific implementations are in the ARCore and ARKit packages. ARFoundation turns the AR data provided by ARSubsystems into Unity GameObjects and MonoBehavours.([source](https://github.com/Unity-Technologies/arfoundation-samples))
 
-Create a ReferenceImageLibrary found in the create>XR>Reference Image Library. You can access this menu by right clicking on the project area.
+Create a ReferenceImageLibrary found in the `create>XR>Reference Image Library`. You can access this menu by right clicking on the project area.
 
-Check specify size and give it the values of the object in the real world. Add it to the reference manger.
+Check specify size and give it the values of the object in the real world. Add it to the reference manager.
 
 Add an `AR Tracked Image Manager` component to your `AR Session Origin` object in your hierarchy. Add your `ReferenceImageLibrary` you created to the `Serialized Library` field in the component.
 
 ![setupImages/setupimageLibrary.JPG](setupImages/setupimageLibrary.JPG)
-
 
 Add a AR Camera Manager Component, and set the focus mode to 'auto'. [AR Camera Manager Documentation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@3.0/api/UnityEngine.XR.ARFoundation.ARCameraManager.html)
 

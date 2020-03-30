@@ -1,7 +1,7 @@
 # ARFoundation-Unity-Experiments
 Experiments made using Unity and AR Foundation. Deployed in Android.
 
-# Setup
+## Setup
 
 Create a new project in Unity and select the 3D Template. I am using version `2019.3.3f1`
 
